@@ -1,9 +1,5 @@
-@import '../libs/vars';
-@import '../libs/functions';
-@import '../libs/mixins';
-
 ///
-/// Identity by HTML5 UP
+/// Dimension by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -12,8 +8,8 @@
 
 	.icon {
 		@include icon;
-		position: relative;
 		border-bottom: none;
+		position: relative;
 
 		> .label {
 			display: none;

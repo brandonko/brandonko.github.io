@@ -4,53 +4,45 @@
 @import 'libs/skel';
 
 /*
-	Identity by HTML5 UP
+	Dimension by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Basic */
+/* BG */
 
-	body {
-		background-image:		url('../../images/bg.jpg');
-		background-repeat:		no-repeat;
-		background-size:		cover;
-		background-position:	bottom center;
-		background-attachment:	fixed;
-
-		&:after {
-			display: none;
+	#bg {
+		&:before {
+			background: _palette(bg-overlay);
 		}
 	}
 
-/* List */
+/* Header */
 
-	ul {
-		&.icons {
-			li {
-				a {
-					&:before {
-						color: _palette(border);
-					}
+	#header {
+		.logo {
+			margin: 0 auto;
+		}
 
-					&:hover {
-						&:before {
-							color: _palette(highlight);
-						}
-					}
-				}
+		.content {
+			display: inline-block;
+		}
+
+		nav {
+			ul {
+				display: inline-block;
+
+				 li {
+				 	display: inline-block;
+				 }
 			}
 		}
-	}
-
-/* Wrapper */
-
-	#wrapper {
-		text-align: center;
 	}
 
 /* Main */
 
 	#main {
-		display: inline-block;
+		article {
+			margin: 0 auto;
+		}
 	}
