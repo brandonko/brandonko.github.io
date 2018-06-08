@@ -6,7 +6,6 @@
 .tab { margin-left: 40px; }
 
 
-
 /*
 	Dimension by HTML5 UP
 	html5up.net | @ajlkn
@@ -700,7 +699,7 @@
 		}
 
 	ul {
-		list-style: disc;
+		list-style: none;
 		margin: 0 0 2rem 0;
 		padding-left: 1em;
 	}
@@ -1227,6 +1226,7 @@
 			#header > :first-child:before {
 				display: none;
 			}
+
 
 		#header .logo {
 			width: 5.5rem;
