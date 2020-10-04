@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Brandon Ko</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+
+<body>
+    <header class="site-header">
+        <div class="wrapper">
+            <span class="site-title">   
+                <strong>Brandon</strong> Ko
+            </span>
+            <nav class="site-nav">
+                <div class="trigger">
+                    <a class="page-link" href="index.html">about</a>
+                    <a class="page-link" href="timeline.html">timeline</a>
+                    <a class="page-link" href="interests.html">interests</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <div class="page-content">
+        <div class="wrapper">
+            <div class="post">
+
+                <header class="post-header">
+                    <h1 class="post-title"><strong>Time</strong>line</h1>
+                    <p>Welcome to my timeline! On this page, you can find many experiences that I have already listed on my resume. However, a few bullet points does not do justice to the projects that I worked on and the skills that I gained at these companies. I use this space to talk about my work in greater detail, covering topics that I find the most impactful and reflecting on the experience as a whole.</p>
+                </header>
+
+                <div class="news">
+                    <h2>Career</h2>
+                    <ul style="padding-left: 18px">
+                        <li>
+                            <h3>NLP Research Intern @ GTL <span class="year">June 2020 - Sept 2020</span></h3>
+                            <p>I spent my summer of 2020 working as a research intern focusing on NLP at <a target="blank" href='https://giving.tech/'>Giving Tech Labs</a>. GTL is a nonprofit company that works in the public sector of technology, focusing on addressing systemic social issues through AI, data sciences and sustainable models. </p>
+                            <p>My first project involved a binary classifier for labeling web pages. The purpose of this classifier was to determine if a random web page provides grants for projects. I factored the code base for this classifier from Jupyter Notebooks into standalone python classes, where models could be trained, saved, and uploaded to Azure via the command line. I also determined the optimal model through various comparisons and tuned the hyperparameters of the final model.</p>
+                            <p>The second project focused on topic modeling for websites containing information on the older workforce. I dove deep into data cleaning and text mining, using various vectorization and clustering techniques to build an understanding of my corpus. The final product used Word2Vec with TFIDF weights as the vectorizer, and clustered the noun phrases of the sentences using <a target="blank" href="https://github.com/jasonlaska/spherecluster">spherical k-means</a>. These topics are used to drive ideas for the next milestones for the dev team.</p>
+                            <p>I had the privilege to work with amazing people throughout this experience. Thank you <a target="blank" href='https://www.linkedin.com/in/shelly-kurtz-219648/'>Shelly Kurtz</a> and <a target="blank" href='https://www.linkedin.com/in/shelly-kurtz-219648/'>Luis Salazar</a> (co founders of GTL) for making this opportunity available, and <a target="blank" href='https://www.linkedin.com/in/yingli7/'>Dr. Ying Li</a> (chief scientist) for being a great mentor. And last but not least, thank you to all the AI4PI interns that I worked with.
+                            </li>
+
+                            <li>
+                                <h3>Software Engineer Intern @ Qualtrics <span class="year">July 2019 - Sept 2019</span></h3>
+                                <p><a target="blank" href="https://www.qualtrics.com/">Qualtrics</a> is an experience management company, aiming to close experience gaps with their technology. I joined the employee experience (EX) team at Qualtrics, which is responsible for building tools around their experience management application tailored for larger sized corporations. The EX platform works by sending out a company-wide survey every few months, where feedback is collected for each employee. My specific team focused on the action planning tool on the EX platform. This tool is designed to help employees improve on their behavior so that they can work seamlessly with their coworkers. Improvements include recommending behavior adjustments (BA) based on the survey feedback.</p>
+                                <p>My project was a proof of concept for integrating AI into action planning. I created a notification bot that looks over the action plan BAs of an individual and reminds them based on their calendar events. By having smarter reminders, individuals can be more aware of their tasks at the right time of the day. I built this tool by first creating a NodeJS app that can connect to a Qualtrics XM user using OAuth through a Microsoft account. Once connected, the app is able to look through all calendar events and action plan BAs. Using <a target="blank" href='https://www.luis.ai/'>Microsoft LUIS</a> and a set of predetermined rules, it determines the optimal pairing of calendar events to BAs. I actually ended up writing my own classifier in PyTorch for classifying calendar events into categories (to be paired with BAs), but there wasn't enough training data to build a decent-performing model, so we decided to stick with Microsoft LUIS and use its default settings. Next, I set up a Microsoft Teams bot that notifies the user of their BAs prior to specific events on the calendar. The user can interact with the bot to configure notifications. Finally, other employees are able to give feedback directly to the user through this bot, so that progress can be tracked through the evaluations of others. Prior to this, progress could not be tracked at all.</p>
+                                <p>Throughout this internship, I strengthened my experience in web development, and learned how to use new tools such as working with Microsoft LUIS and building a Microsoft Teams bot. I also learned how to write design documentations for projects. Although not implemented, I was asked questions about security, scalability, and robustness, all of which I had to discuss in my design documentation. I created optimal schemas for my database and covered different ways of launching the application so that more users could be supported. I was pushed to think outside of the box, covering all sorts of edge cases for my application. I greatly enjoyed my time at Qualtrics, and would like to thank my manager Zhongwei Wu and my mentor Ron Quan for guiding me through this experience.</p>
+                            </li>
+
+                            <li>
+                                <h3>Full Stack Intern @ GTL <span class="year">Nov 2018 - April 2019</span></h3>
+                                <p>This was my first experience as an intern. I'll talk more about it later :)</p>
+                            </li>
+                        </ul>
+
+                        <div class='news'>
+                            <h2>Personal</h2>
+                            <ul style="padding-left: 18px">
+                                <li>
+                                    <h3>Teaching Assistant @ UW <span class="year">September 2020 - Present</span></h3>
+                                    <p>I am currently working as a TA for <a target="blank" href='https://courses.cs.washington.edu/courses/cse414/'>CSE 414</a> (database systems), taught by Professor Ryan Maas.</p>   
+                                </li>
+                                <li>
+                                    <h3>Section Leader @ Stanford <span class="year">April 2020 - May 2020</span></h3>
+                                    <p>I volunteered to be a section leader for Stanford's Code-In-Place curriculum. This course was designed to provide individuals with an introduction to coding at no cost, allowing individuals with all sorts of backgrounds to attend. The program was very fun, and I really enjoyed teaching the basics of computer science to a diverse group of students.</p>
+                                </li>
+                                <li>
+                                    <h3>Team Lead for Startup @ Alpha Kappa Psi <span class="year">May 2019 - April 2020</span></h3>
+                                    <p>My professional business fraternity, <a target="blank" href='https://www.akpsiuw.org/'>Alpha Kappa Psi</a>, runs an entrepreneurship committe that creates a startup from scratch every year. During my senior year at UW, I lead a group of 7 students to create an aromatherapy bracelet company, called Petrichor. We sold essential oils and gemstone bracelets, and ended with a total revenue of $350. It was an experience full of growth, helping me build more confidence in my decision making skills and teaching me how to empathize with my teammates as we struggled through thick and thin. Check out our website <a target="blank" href="https://petrichor-rho.netlify.com/">here</a>!</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <h2>Projects</h2>
+                        <ul style="padding-left: 18px">
+                            <li>
+                                <h3>Recruitment Manager @ Alpha Kappa Psi <span class="year">June 2019</span></h3>
+                                <p>I build an app to reduce selection bias for my professional business fraternity, <a target="blank" href='https://www.akpsiuw.org/'>Alpha Kappa Psi</a>. Heres the <a target="blank" href="https://github.com/brandonko/RushManager">code</a>!</p>
+                            </li>
+                            <li>
+                                <h3>Study Buddies @ DubHacks <span class="year">Oct 2018</span></h3>
+                                <p>I built an app to help connect other students who are trying to find study groups. Check it out on <a target="blank" href="https://github.com/brandonko/Study-Buddies">GitHub</a>!</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+
+                <div class="wrapper">
+                    &copy; Copyright 2020 Brandon Ko.
+                    Created with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. All photos are original.
+                </div>
+
+            </footer>
+
+
+            <!-- Load jQuery -->
+            <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+        </body>
+
+        </html>
