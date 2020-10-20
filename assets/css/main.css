@@ -549,3 +549,39 @@ sup { position: relative; vertical-align: middle; top: -0.9ex; }
 h1, h2, h3, h4, h5, h6 { font-weight: 100; }
 
 div.equation { margin: 0.5rem 0; }
+
+
+/* Collapsible stuff */
+.collapsible {
+  border-color: #eee;
+  background-color: white;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 5px;
+  padding-right: 10px;
+  color: #666;
+  -webkit-transition: background-color 0.4s;
+  -moz-transition:    background-color 0.4s;
+  -ms-transition:     background-color 0.4s;
+  -o-transition:      background-color 0.4s;
+  transition:         background-color 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.collapsible:hover {
+  background-color: #f7f7f7;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.dropdown-content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
