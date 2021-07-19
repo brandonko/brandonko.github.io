@@ -42,6 +42,27 @@
 
                 <div class="news">
                     <h2>Career</h2>
+
+                    <button type="button" class="collapsible"><h3>Software Engineer Intern @ Airbnb <span class="year">June 2021 - Sept 2021</span></h3></button>
+                    <div class="dropdown-content">
+                        <p>In progress!!! :D</p>
+                    </div>
+
+                    <button type="button" class="collapsible"><h3>NLP Research Assistant @ Ai2 <span class="year">March 2021 - June 2021</span></h3></button>
+                    <div class="dropdown-content">
+                        <p>Throughout my final quarter at UW, I worked on a research paper with <a target="blank" href="https://kyleclo.github.io/">Kyle Lo's</a> team at the <a target="blank" href="https://allenai.org/">Allen Institute of Artificial Intelligence</a>. This project falls under the category of NLP for scientific literature, focusing on classification tasks involving scholarly papers. The purpose of the project is to build a better understanding of the usages of citations in research papers, specifically those in the field of computer science. After designing the different use cases of citations (i.e. to provide more background information or to provide a counterpoint), we were interested in seeing if a model could accurately classify how a citation is used in a paper.</p>
+                        <p>The researchers on this team had previously identified that context windows for citations are valuable for learning. This means that a model will more accurately classify the intents of a citation if a window of context surrounding the citation is provided. This window varies, since each citation can have multiple sentences (or none) before and after the actual citation sentence that provides context. To aid the citation intent classifier, I built a model that captures the optimal context window for each citation. I experimented with the <a target="blank" href="https://arxiv.org/abs/1810.04805">BERT</a> and <a target="blank" href="https://arxiv.org/abs/2004.05150">Longformer</a> models from <a target="blank" href="https://huggingface.co/">HuggingFace</a>, using the sequence tagging variation of the model to capture different windows. To achieve this, I devised a token tagging system that captures the citation context windows and modified the model's loss function such that only the loss is calculated on the citation window classifications.</p>
+                        <p>I was able to greatly expand my technical knowledge in NLP throughout this experience. Here is a brief list of stuff I learned:
+                            <ul>
+                                <li>Quality data is most important. It doesn't matter how fancy or sophisticated your model is, if your data is bad, your model won't be able to learn.</li>
+                                <li>Problem formulation and design is tricky. Sometimes, you think you have a simple classification task when in reality, you have a very complex task with multiple different scenarios. It is important to really think about what problem your model is trying to solve and how the model should go about solving it.</li>
+                                <li>Transformers are quite powerful. By building contextualized sentence representations using attention, the model can "understand" the data as if it were reading through it, remembering what happened before and after. We exploited this aspect of the transformer to build a sequence tagger and classifier all in one.</li>
+                                <li>And a bunch more technical details when it comes to training and debugging a machine learning model!</li>
+                            </ul>
+                        Huge thanks to <a target="blank" href="https://nasmith.github.io/">Noah Smith</a> for connecting me with Kyle, which lead to this research assistant opportunity.
+                        </p>
+                    </div>
+
                     <button type="button" class="collapsible"><h3>NLP Research Intern @ GTL <span class="year">June 2020 - Sept 2020</span></h3></button>
                     <div class="dropdown-content">
                         <p>I spent my summer of 2020 working as a research intern focusing on NLP at <a target="blank" href='https://giving.tech/'>Giving Tech Labs</a>. GTL is a nonprofit company that works in the public sector of technology, focusing on addressing systemic social issues through AI, data sciences and sustainable models. </p>
@@ -91,20 +112,24 @@
 
                     <div class='news'>
                         <h2>Personal</h2>
-                        <button type="button" class="collapsible"><h3>Teaching Assistant @ UW <span class="year">September 2020 - Present</span></h3></button>
+                        <button type="button" class="collapsible"><h3>Teaching Assistant @ UW <span class="year">September 2020 - June 2020</span></h3></button>
                         <div class="dropdown-content">
-                            <p>I am currently working as a TA for <a target="blank" href='https://courses.cs.washington.edu/courses/cse414/'>CSE 414</a> (database systems), taught by Professor Ryan Maas.</p>
-                        </div>
+                            <p>I worked as a teaching assistant for the database courses throughout my 2020 - 2021 academic year. Below are the courses that I helped teach:
+                                <ul>
+                                    <li><a target="blank" href='https://courses.cs.washington.edu/courses/cse414/'>CSE 414 - Introduction to Database Systems</a> taught by Ryan Maas</li>
+                                    <li><a target="blank" href="https://courses.cs.washington.edu/courses/cse344/">CSE 344 - Introduction to Data Management</a> taught by Jonathan Leang</li>
+                                    <li><a target="blank" href="https://courses.cs.washington.edu/courses/cse344/">CSE 544 - Principles of DBMS</a> taught by Dan Suciu</li>
+                                </div>
 
-                        <button type="button" class="collapsible"><h3>Section Leader @ Stanford <span class="year">April 2020 - May 2020</span></h3></button>
-                        <div class="dropdown-content">
-                            <p>I volunteered to be a section leader for <a href='https://engineering.stanford.edu/news/free-coding-education-time-covid-19'>Stanford's Code-In-Place</a> curriculum. This course was designed to provide individuals with an introduction to coding at no cost, allowing individuals with all sorts of backgrounds to attend. The program was very fun, and I really enjoyed teaching the basics of computer science to a diverse group of students.</p>
-                        </div>
+                                <button type="button" class="collapsible"><h3>Section Leader @ Stanford <span class="year">April 2020 - May 2020</span></h3></button>
+                                <div class="dropdown-content">
+                                    <p>I volunteered to be a section leader for <a href='https://engineering.stanford.edu/news/free-coding-education-time-covid-19'>Stanford's Code-In-Place</a> curriculum. This course was designed to provide individuals with an introduction to coding at no cost, allowing individuals with all sorts of backgrounds to attend. The program was very fun, and I really enjoyed teaching the basics of computer science to a diverse group of students.</p>
+                                </div>
 
-                        <button type="button" class="collapsible"><h3>Team Lead for Startup @ Alpha Kappa Psi <span class="year">May 2019 - April 2020</span></h3></button>
-                        <div class="dropdown-content">
-                            <p>My professional business fraternity, <a target="blank" href='https://www.akpsiuw.org/'>Alpha Kappa Psi</a>, runs an entrepreneurship committe that creates a startup from scratch every year. During my senior year at UW, I lead a group of 7 students to create an aromatherapy bracelet company, called Petrichor. We sold essential oils and gemstone bracelets, and ended with a total revenue of $350. It was an experience full of growth, helping me build more confidence in my decision making skills and teaching me how to empathize with my teammates as we struggled through thick and thin. Check out our website <a target="blank" href="https://petrichor-rho.netlify.com/">here</a>!</p>
-                        </div>
+                                <button type="button" class="collapsible"><h3>Team Lead for Startup @ Alpha Kappa Psi <span class="year">May 2019 - April 2020</span></h3></button>
+                                <div class="dropdown-content">
+                                    <p>My professional business fraternity, <a target="blank" href='https://www.akpsiuw.org/'>Alpha Kappa Psi</a>, runs an entrepreneurship committe that creates a startup from scratch every year. During my senior year at UW, I lead a group of 7 students to create an aromatherapy bracelet company, called Petrichor. We sold essential oils and gemstone bracelets, and ended with a total revenue of $350. It was an experience full of growth, helping me build more confidence in my decision making skills and teaching me how to empathize with my teammates as we struggled through thick and thin. Check out our website <a target="blank" href="https://petrichor-rho.netlify.com/">here</a>!</p>
+                                </div>
 
                         <!--
                     </div>  
@@ -133,7 +158,7 @@
 
                     <button type="button" class="collapsible"><h3>Study Buddies @ DubHacks <span class="year">Oct 2018</span></h3></button>
                     <div class="dropdown-content">
-                        p>I built an app to help connect other students who are trying to find study groups. Check it out on <a target="blank" href="https://github.com/brandonko/Study-Buddies">GitHub</a>!</p>
+                        <p>I built an app to help connect other students who are trying to find study groups. Check it out on <a target="blank" href="https://github.com/brandonko/Study-Buddies">GitHub</a>!</p>
                     </div>
 
                     <!--
